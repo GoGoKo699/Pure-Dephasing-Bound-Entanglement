@@ -21,6 +21,14 @@ Start with [the scientific overview](science/README.md). The [model](science/mod
 
 The [related-work account](references/RELATED_WORK.md) identifies the inherited Gaussian covariance criteria, reservoir-transfer methods and partial-transpose generator test. The added conclusion concerns the restricted, time-homogeneous, commuting-observable pure-dephasing class. Gaussian bound entanglement, reservoir entanglement transfer and general PPT-preserving entangling channels were already known.
 
+## Learn the project
+
+The educational anchor is **Weedbrook et al., _Gaussian Quantum Information_**, Reviews of Modern Physics 84, 621–669 (2012), using the openly available [arXiv:1110.3234v1 author version](https://arxiv.org/abs/1110.3234v1) for section references. The [Weedbrook bridge](learning/WEEDBROOK_BRIDGE.md) translates the quadrature conventions and connects Gaussian-state geometry to the dephasing channel, local extraction and exact finite-spin witness.
+
+The [30-milestone map](learning/MILESTONES.md) has **12 background/preliminaries milestones** and **18 narrative/innovation milestones**. The first phase builds the state, channel and covariance framework; the second assembles the mechanism, finite examples, transfer proof and robustness into the complete result. Each milestone identifies a central question, understanding target, dependencies, conceptual connection and scientific sources.
+
+Use the bridge alongside the map, or follow the direct scientific route above. The [LLM reading guide](llms.txt) maps questions to the authoritative proofs, learning material and reproduction commands.
+
 ## Reproduce the certificates
 
 ```bash

@@ -1,0 +1,46 @@
+# Pure Dephasing Bound Entanglement
+
+> A complete scientific account of PPT bound-entanglement generation from fully product system inputs by Hamiltonian-free, time-homogeneous correlated pure dephasing, with a Gaussian covariance correspondence and rigorous finite-qubit certificates.
+
+## Start here
+
+- [Repository overview](README.md): question, principal results, physical scope, learning route and reproduction commands.
+- [Scientific overview](science/README.md): connected proof route and how the Gaussian and finite-spin arguments fit together.
+
+## Questions and authoritative answers
+
+- What does pure dephasing mean here, and why can quantum correlations differ from classical phase noise? Read [the model](science/model.md), including the exact kernel, coefficient matrix, partial-transpose generator and oscillator evolution.
+- How does a Gaussian target determine a dephasing semigroup? Read [reservoir embedding](science/reservoir-embedding.md), especially the conventions and theorem, finite-time dilation, local canonical extraction, separability and PPT proofs.
+- What is actually extracted, and which resources are required? The same [embedding account](science/reservoir-embedding.md#resources-interpretation-and-limitations) states the finite-time additive noise, reservoir correlations, local decoder, input squeezing and energy cost.
+- Why does the witness rule out every separable state, including non-Gaussian states? Read [covariance witnesses](science/covariance-witnesses.md). The local commutator expectations belong to the tested state.
+- Where is the explicit 2,048-qubit example? Read [the four-mode and finite-qubit certificate](science/four-mode-certificate.md), then the matching exact verification program and stored rational inputs.
+- Why does an oscillator witness survive at a finite spin-group size? Read [finite-spin transfer](science/finite-spin-transfer.md), with the exact moments, magnetizations and separate covariance-score and uncertainty-threshold error bounds.
+- Which perturbations are certified? Read [robustness](science/robustness.md). The coefficient box and added group-dephasing intervals are separate guarantees.
+- Which ingredients are inherited? Read [related work](references/RELATED_WORK.md) and the [structured bibliography](references/references.bib).
+
+## Study route
+
+The single educational anchor is Weedbrook et al., Gaussian Quantum Information, Rev. Mod. Phys. 84, 621–669 (2012). Section references use arXiv:1110.3234v1.
+
+- [Weedbrook bridge](learning/WEEDBROOK_BRIDGE.md): relevant source sections, quadrature/covariance dictionary, worked example and missing steps to the research results.
+- [30-milestone map](learning/MILESTONES.md): 12 background/preliminaries milestones followed by 18 narrative/innovation milestones, with stable M01–M30 identifiers, conceptual dependencies and source pointers.
+
+These are common scientific learning materials. They do not prescribe a reader's assessment history or establish mastery.
+
+## Reproduction route
+
+Start with [the verification guide](verification/README.md). Install its pinned requirements and run the five documented programs. The committed JSON certificates retain exact rational inputs and bounds. The analytic witness-region figure has its own documented generator and plotting requirements.
+
+Finite exact checks establish their stated instances and algebraic identities. General quantifiers, local extraction and convergence are established by the written proofs and their cited ingredients.
+
+## Distinctions to preserve
+
+- The system input is fully product. Reservoir quantum correlations or collective nonlocal couplings supply the entanglement resource.
+- The original reduced generator has zero system Hamiltonian. The microscopic dilation contains local system–reservoir interactions, and the transposed description may have a Hamiltonian term.
+- PPT and entanglement are certified across the same specified bipartition. PPT across every other cut is not asserted.
+- The exact separability/PPT equivalences concern the constructed Gaussian covariance family. The general transpose-coefficient test is presented as a sufficient condition outside that family.
+- The Gaussian target, carrier oscillators and finite spin groups are distinct systems. A target with r modes uses 2r carrier oscillators in the general construction.
+- Finite-time extraction returns the target plus explicit additive noise. Exact asymptotic recovery carries increasing resource costs.
+- The finite-spin proof uses actual magnetization-dependent commutators and convergence of moments and witnesses; it does not claim a full-state or full-channel oscillator limit.
+- The 2,048-qubit certificate is an exact existence result. The larger general sufficient-size bound and separate eight-group example do not establish an optimal size.
+- Generic Gaussian reservoir transfer and PPT-preserving entangling Gaussian channels have precedents. The scientific contribution concerns the restricted pure-dephasing semigroup and its finite-spin realization.
