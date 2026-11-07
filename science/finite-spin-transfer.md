@@ -113,7 +113,7 @@ The exact formulas, valid for every positive integer $`m`$, are
 a_j=
 e^{-r_{jj}/m}\prod_{\ell=1}^n
 \cos(x_{j\ell}/m)^m,
-\tag{1}
+\qquad\text{(1)}
 ```
 
 ```math
@@ -121,7 +121,7 @@ e^{-r_{jj}/m}\prod_{\ell=1}^n
 \qquad
 (V_m)_{Q_jP_k}
 =m a_k\tan(x_{kj}/m),
-\tag{2}
+\qquad\text{(2)}
 ```
 
 where the product form $`m e^{-r_{kk}/m}\sin(x_{kj}/m) \cos(x_{kj}/m)^{m-1}\prod_{\ell\ne j}\cos(x_{k\ell}/m)^m`$
@@ -136,7 +136,7 @@ For diagonal momentum entries,
 1-e^{-4r_{jj}/m}
 \prod_{\ell=1}^n\cos(2x_{j\ell}/m)^m
 \right].
-\tag{3}
+\qquad\text{(3)}
 ```
 
 For $`j\ne k`$ and $`s=\pm1`$, define
@@ -147,7 +147,7 @@ e^{-(r_{jj}+r_{kk}+2s r_{jk})/m}
 \cos(x_{jk}/m)^{2(m-1)}
 \prod_{\ell\notin\{j,k\}}
 \cos[(x_{j\ell}+s x_{k\ell})/m]^m.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Then
@@ -155,7 +155,7 @@ Then
 ```math
 (V_m)_{P_jP_k}
 =\frac m2\left(G_{jk}^{(-1)}-G_{jk}^{(+1)}\right).
-\tag{5}
+\qquad\text{(5)}
 ```
 
 ### Derivation
@@ -167,7 +167,7 @@ In the joint eigenbasis of the $`Q_j^{(m)}`$, a matrix element between eigenvalu
 -\frac t2(q-q')^T R(q-q')
 +it\,q^T B_0q'
 \right].
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Flipping a single physical spin changes its group coordinate by $`\sqrt{2/m}`$. Averaging the phase over the other independent initial $`Z`$ values supplies the cosine factors in (1). Inserting one $`Z`$ in another group replaces one cosine by a sine and gives (2). Terms with two distinct spins in the same group give (3): equal-sign raising/lowering products have total coordinate change twice as large, while opposite-sign flips have zero group-coordinate change. For spins in different groups, the two relative flip signs give (4). Each of the two groups containing a flipped spin has $`m-1`$ unflipped spins, explaining the exponent $`2(m-1)`$. Their signed difference gives (5).
@@ -202,7 +202,7 @@ b_m(W,a):=
 \mathrm{Tr}\left|
 i\sqrt{W_X}\Omega_X(a)\sqrt{W_X}
 \right|.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 This bound permits arbitrary entanglement among qubits within either party.
@@ -217,7 +217,7 @@ All constants below are fixed by $`C,t,W`$. Let
 X_{\max}=\max_{j,k}|x_{jk}|,
 \qquad
 m\ge\max\{1,4X_{\max}\}.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 Every trigonometric argument in (1)--(5) then has absolute value at most $`1/2`$, so its cosine is positive. Put
@@ -234,7 +234,7 @@ For $`|z|\le1/2`$,
 0\le-\log\cos z-\frac{z^2}{2}\le\frac{z^4}{8},
 \qquad
 |\tan z-z|\le\frac{|z|^3}{2}.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 One direct proof uses $`\tan z\le 8z/7`$ for $`0\le z\le1/2`$, obtained from $`\sin z\le z`$ and $`\cos z\ge7/8`$. Integrating $`\tan^2 z`$ and then integrating once more gives constants $`64/147<1/2`$ and $`16/147<1/8`$.
@@ -252,7 +252,7 @@ Then
 
 ```math
 0\lt a_j\le1,\qquad 0\le1-a_j\le\eta_j(m).
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Indeed $`-\log a_j=A_j/m+\epsilon_j`$ with $`0\le\epsilon_j\le v_j/(8m^3)`$, and $`1-e^{-z}\le z`$.
@@ -266,7 +266,7 @@ For every pair $`j,k`$,
 \le
 E^{QP}_{jk}(m):=
 |x_{kj}|\eta_k(m)+\frac{|x_{kj}|^3}{2m^2}.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 This follows by writing
@@ -288,7 +288,7 @@ Then
 E^{PP}_{jj}(m):=
 \frac{d_j}{2m}+\frac{v_j}{m^2}
 +\frac m4[z_j^+(m)]^2.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 To see this, the negative logarithm of the product in (3) is $`z=d_j/m+\epsilon`$, with $`0\le\epsilon\le2v_j/m^3`$. The inequality
@@ -330,7 +330,7 @@ E^{PP}_{jk}(m):=
 \frac{w_{jk}^{(+1)}+w_{jk}^{(-1)}}{16m^2}
 +\frac m4
 \left([z_{jk,+1}^+(m)]^2+[z_{jk,-1}^+(m)]^2\right).
-\tag{14}
+\qquad\text{(14)}
 ```
 
 For the proof,
@@ -365,7 +365,7 @@ The position covariance has no error. Define
 &+\sum_j W_{P_jP_j}E^{PP}_{jj}(m)
 +2\sum_{j\lt k}|W_{P_jP_k}|E^{PP}_{jk}(m).
 \end{aligned}
-\tag{15}
+\qquad\text{(15)}
 ```
 
 Then
@@ -381,14 +381,14 @@ For each party let $`\eta_X(m)=\max_{j\in X}\eta_j(m)`$, and put
 \mathcal P_W(m)=
 \mathrm{Tr}(W_A)\eta_A(m)
 +\mathrm{Tr}(W_B)\eta_B(m).
-\tag{16}
+\qquad\text{(16)}
 ```
 
 The reverse triangle inequality for the trace norm gives
 
 ```math
 b_m(W,a)\ge b_\infty(W)-\mathcal P_W(m).
-\tag{17}
+\qquad\text{(17)}
 ```
 
 Here
@@ -403,7 +403,7 @@ m\ge\max\{1,4X_{\max}\},
 \qquad
 \mathcal E_W(m)+\mathcal P_W(m)<\Delta.
 \quad}
-\tag{18}
+\qquad\text{(18)}
 ```
 
 Every displayed error bound is $`O(1/m)`$. More explicitly it is a sum of nonnegative constant multiples of $`m^{-1},m^{-2},m^{-3},\ldots`$, apart from the harmless decreasing minimum in (11). Thus the sufficient bound decreases to zero. Starting above (9) and doubling $`m`$ terminates after finitely many steps, and every larger integer also satisfies (18) once it first holds. If the inputs and a positive lower bound on $`\Delta`$ are rational, this procedure can use rational arithmetic throughout.

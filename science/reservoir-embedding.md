@@ -39,7 +39,7 @@ and use
 ```math
 \mathcal L_G(\rho)=\sum_{jk}(C_G)_{jk}
 \left(Q_j\rho Q_k-\tfrac12\{Q_kQ_j,\rho\}\right).
-\tag{1}
+\qquad\text{(1)}
 ```
 
 There is no system Hamiltonian. Time is measured in units of the overall dephasing rate; a rate $`\gamma`$ can be restored by replacing $`C_G`$ by $`\gamma C_G`$ and $`t`$ everywhere below by $`\gamma t`$.
@@ -50,7 +50,7 @@ There is no system Hamiltonian. Time is measured in units of the overall dephasi
 
 ```math
 G+\frac{I}{2t},\qquad t>0.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 2. The target Gaussian state is separable if and only if every $`\Phi_t^G`$ preserves separability. If the target is entangled, product carrier vacuum produces entanglement for every sufficiently large finite $`t`$.
@@ -69,7 +69,7 @@ In the joint carrier position basis, the channel is
 \langle x|\Phi_t^G(\rho)|y\rangle
 =\exp\!\left[-\frac t2(x-y)^{\mathsf T}G(x-y)
 -itx^{\mathsf T}\Omega y\right]\rho(x,y).
-\tag{3}
+\qquad\text{(3)}
 ```
 
 This explicitly preserves every joint position-basis population. Multiplying its kernels adds the times, so it is a homogeneous semigroup.
@@ -78,14 +78,14 @@ A useful exact dilation also resolves existence issues associated with the unbou
 
 ```math
 U_t=\exp\!\left(i\sqrt{2t}\,Q^{\mathsf T}Z\right).
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The two-party generator of this unitary is a sum of commuting local terms, $`Q_A^{\mathsf T}Z_A+Q_B^{\mathsf T}Z_B`$. Thus $`U_t=U_{A,t}\otimes U_{B,t}`$ relative to the enlarged carrier-plus-reservoir parties. Gaussian characteristic functions and the Weyl relation give
 
 ```math
 \mathrm{Tr}_{E}[U_t(\rho\otimes\sigma_G)U_t^\dagger]=\Phi_t^G(\rho).
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Explicitly, cyclicity of the reservoir trace combines the two conditional displacements into a displacement by $`\sqrt{2t}(x-y)`$, together with the Weyl phase $`\exp[-itx^{\mathsf T}\Omega y]`$. Its Gaussian characteristic function supplies the real exponential in (3).
@@ -97,7 +97,7 @@ The exact Heisenberg output variables are
 ```math
 Q_{\rm out}=Q,\qquad
 P_{\rm out}=P-t\Omega Q+\sqrt{2t}\,Z.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 For example, the nested commutator expansion of $`U_t^\dagger P U_t`$ terminates after the second commutator. The first term is $`+\sqrt{2t}Z`$; the second is $`-t\Omega Q`$. This sign agrees with $`B=-\Omega`$.
@@ -107,7 +107,7 @@ The Gaussian-channel matrices, in carrier ordering $`(Q,P)`$, are therefore
 ```math
 A_t=\begin{pmatrix}I&0\\-t\Omega&I\end{pmatrix},\qquad
 Y_t=\begin{pmatrix}0&0\\0&2tG\end{pmatrix}.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 From carrier vacuum their output covariance is
@@ -116,7 +116,7 @@ From carrier vacuum their output covariance is
 V_t=\begin{pmatrix}
 I&t\Omega\\-t\Omega&I+2tG+t^2I
 \end{pmatrix}.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Equivalently, for general antisymmetric $`B`$, the familiar expression is $`V_t=\left(\begin{smallmatrix}I&-tB\\tB&I+2tG-t^2B^2\end{smallmatrix}\right)`$. The finite-time dilation makes (7) a genuine channel even though its deterministic drift alone is not symplectic.
@@ -128,21 +128,21 @@ Define the following $`d`$ output observables on the carriers:
 ```math
 X=\frac{P+t\Omega Q}{\sqrt{2t}}
 =\frac{P-tBQ}{\sqrt{2t}}.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 They are actual canonical coordinates:
 
 ```math
 [X_j,X_k]=i\Omega_{jk}.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The antisymmetry is essential. Both mixed terms in the commutator contribute with the same sign. Formula (6) gives the particularly transparent dilation identity
 
 ```math
 X_{\rm out}=Z+\frac{P_{\rm in}}{\sqrt{2t}}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Since the input carrier momenta commute and have doubled covariance $`I`$, the reduced Gaussian state of $`X`$ has covariance (2).
@@ -166,7 +166,7 @@ Let $`D=\bigoplus_{j=1}^{r}\mathrm{diag}(1,-1)`$, which acts separately within e
 =\frac1{\sqrt{2t}}
 \begin{pmatrix}t\Omega&I\\-tD\Omega&D\end{pmatrix}
 \begin{pmatrix}Q\\P\end{pmatrix}.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 It is invertible and takes the carrier canonical form to $`\Omega\oplus\Omega`$. All its entries connecting Alice to Bob vanish after party ordering. It is therefore implemented by local Gaussian unitaries, after which the $`Y'`$ modes may be discarded locally.
@@ -186,14 +186,14 @@ The covariance characterization of Gaussian separability, summarized in [the wit
 
 ```math
 G\succeq G_A\oplus G_B.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 For such a target, let $`N=G-(G_A\oplus G_B)\succeq0`$. Then the coefficient matrix decomposes as
 
 ```math
 C_G=(G_A-i\Omega_A)\oplus(G_B-i\Omega_B)+N.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The first part generates local channels. The real positive matrix $`N`$ generates correlated classical Gaussian phase kicks, each of which factorizes into a unitary on Alice and a unitary on Bob. All these dephasing superoperators commute because they are polynomials in mutually commuting left and right multiplication by the $`Q_j`$. Their channel product is separability preserving on arbitrary inputs that are separable across $`A|B`$, including non-Gaussian inputs. Alternatively, (5) gives an immediate proof: a separable reservoir state, local unitaries, and local traces cannot create cross-party entanglement.
@@ -204,7 +204,7 @@ For the converse, an entangled Gaussian covariance admits a positive covariance 
 \Delta=\beta_{\rm sep}(W)-\mathrm{Tr}(WG)>0,
 \qquad
 \beta_{\rm sep}(W)=f(W_A,\Omega_A)+f(W_B,\Omega_B),
-\tag{15}
+\qquad\text{(15)}
 ```
 
 where $`f(M,\Omega)=\mathrm{Tr}|i\sqrt M\Omega\sqrt M|`$. The [covariance-witness theorem](covariance-witnesses.md#the-witness-bound) proves this lower bound for every separable state with finite second moments, including non-Gaussian states. Completeness for Gaussian covariances follows by separating the closed convex set (13); its upward closure forces the separating weight to be positive semidefinite. Closedness can be seen by taking a convergent sequence of upper covariances in (13): the dominated local covariances have bounded subsequences, whose limits remain physical and satisfy (13).
@@ -220,7 +220,7 @@ Thus the carrier state is entangled whenever
 
 ```math
 t>\frac{\mathrm{Tr}W}{2\Delta}.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 This is a finite-time certificate; it does not rely on claiming entanglement only in an asymptotic limit. The decoded state also converges in trace norm to the target as $`t\to\infty`$, since it is the target passed through an additive Gaussian displacement channel whose noise tends to zero.
@@ -236,14 +236,14 @@ C_T=\begin{pmatrix}
 G_{AA}+i\Omega_A&-G_{AB}\\
 -G_{BA}&G_{BB}-i\Omega_B
 \end{pmatrix}.
-\tag{17}
+\qquad\text{(17)}
 ```
 
 The usual imaginary cross-party Hamiltonian in the transpose-conjugated generator is absent here because $`B_{AB}=0`$. Let $`S=(-I_A)\oplus I_B`$. Then
 
 ```math
 SC_TS=G-i\Omega_{\rm PT}.
-\tag{18}
+\qquad\text{(18)}
 ```
 
 Consequently $`C_T\succeq0`$ exactly when the target is PPT. The [transpose-conjugated generator criterion](model.md#a-sufficient-all-time-ppt-condition) gives complete PPT preservation at every time. One can also read this directly from the local dilation: a PPT reservoir combined with a PPT carrier input remains PPT under the enlarged local unitaries and local reservoir trace.
@@ -271,7 +271,7 @@ G_0=\begin{pmatrix}
 0&0&-1&0&0&0&2&0\\
 0&-1&0&0&0&0&0&4
 \end{pmatrix}.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 Both $`G_0+i\Omega`$ and $`G_0+i\Omega_{\rm PT}`$ have characteristic polynomial
@@ -287,14 +287,14 @@ A sparse witness is the sum of doubled variances of
 ```math
 2q_1-q_3,\qquad 2q_2+q_4,\qquad
 3p_1+p_4,\qquad 3p_2+p_3.
-\tag{20}
+\qquad\text{(20)}
 ```
 
 Write its weight as $`W=F^{\mathsf T}F`$, with the four rows of $`F`$ given by these coefficients. Then
 
 ```math
 \mathrm{Tr}(WG_0)=26,\qquad\mathrm{Tr}W=30.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 Every $`A|B`$-separable state satisfies a lower bound of 28. To see it without a numerical symplectic calculation, the local Alice block of $`W`$ is $`\mathrm{diag}(4,9,4,9)`$. Each of Alice's two modes contributes at least $`2\sqrt{4\cdot9}=12`$ by local uncertainty. Bob's block is $`I_4`$, contributing at least 2 per mode. The total is $`24+4=28`$. Positive covariance from mixing product-state means cannot decrease this bound.
@@ -303,14 +303,14 @@ Set $`G_\delta=G_0+\delta I`$, and build $`C=G_\delta-i\Omega`$ on eight carrier
 
 ```math
 26+30\delta+\frac{15}{t}.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 It is strictly below 28 whenever
 
 ```math
 \delta\geq0,\qquad \delta+\frac1{2t}<\frac1{15}.
-\tag{23}
+\qquad\text{(23)}
 ```
 
 This is a sufficient witnessed region, not a claim of the exact separability boundary of $`G_0+\delta I`$.
@@ -341,7 +341,7 @@ At finite $`t`$, the recovered covariance is $`G+I/(2t)`$. Exact recovery is asy
 \langle N_{\rm carriers}\rangle
 =\frac{\mathrm{Tr}V_t-2d}{4}
 =\frac t2\mathrm{Tr}G+\frac{dt^2}{4}.
-\tag{24}
+\qquad\text{(24)}
 ```
 
 For the rational eight-carrier benchmark it equals 2074. This is an exact finite-energy mathematical example; no experimental cost optimum or laboratory implementation is claimed. A squeezed-input proof of the fixed-time statement additionally charges initial energy $`d(s+s^{-1}-2)/4`$.
