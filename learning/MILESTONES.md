@@ -11,7 +11,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M01 — A mode and its quadratures
 
 - **Central question:** What makes a pair of observables one oscillator mode?
-- **Understanding target:** The canonical commutator fixes the quantum uncertainty scale. Weedbrook's quadratures have commutator $2i$; the project uses $i$ and a doubled covariance.
+- **Understanding target:** The canonical commutator fixes the quantum uncertainty scale. Weedbrook's quadratures have commutator $`2i`$; the project uses $`i`$ and a doubled covariance.
 - **Dependencies and story role:** Starting point. It fixes the local object before matrices or multipartite states are introduced.
 - **Conceptual connection:** The same numerical vacuum covariance can accompany different operator normalizations. This distinction controls every later witness threshold.
 - **Source pointers:** [W, §§I D and II A][weedbrook]; [model — Oscillator evolution](../science/model.md#oscillator-evolution); [bridge — Conventions that carry the same covariance](WEEDBROOK_BRIDGE.md#conventions-that-carry-the-same-covariance).
@@ -27,7 +27,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M03 — Physical covariance matrices
 
 - **Central question:** Why is a positive real covariance matrix not by itself a quantum state certificate?
-- **Understanding target:** The uncertainty condition couples covariance to the commutator matrix. In the project convention it is $V+i\Omega\succeq0$; ordinary matrix positivity alone omits quantum uncertainty.
+- **Understanding target:** The uncertainty condition couples covariance to the commutator matrix. In the project convention it is $`V+i\Omega\succeq0`$; ordinary matrix positivity alone omits quantum uncertainty.
 - **Dependencies and story role:** M01–M02. It adds the physical constraint to the statistical representation.
 - **Conceptual connection:** Encoding a target covariance into a dephasing coefficient matrix will work because covariance physicality and generator positivity have matching forms.
 - **Source pointers:** [W, §§II A.1 and II C][weedbrook]; [model — Oscillator evolution](../science/model.md#oscillator-evolution); [embedding — Conventions and theorem](../science/reservoir-embedding.md#conventions-and-theorem).
@@ -69,7 +69,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 - **Central question:** How does partial transposition become a covariance test?
 - **Understanding target:** Transposition on one party reverses that party's momenta. A Gaussian state is PPT exactly when the transformed covariance still obeys the quantum uncertainty condition.
 - **Dependencies and story role:** M03 and M05–M07. It introduces an independently computable entanglement obstruction.
-- **Conceptual connection:** The embedding moves the momentum-sign transformation onto the canonical antisymmetric matrix, giving $\Omega_{\mathrm{PT}}=(-\Omega_A)\oplus\Omega_B$ when A is transposed.
+- **Conceptual connection:** The embedding moves the momentum-sign transformation onto the canonical antisymmetric matrix, giving $`\Omega_{\mathrm{PT}}=(-\Omega_A)\oplus\Omega_B`$ when A is transposed.
 - **Source pointers:** [W, §II D.1][weedbrook]; [embedding — Conventions and theorem](../science/reservoir-embedding.md#conventions-and-theorem); [model — A sufficient all-time PPT condition](../science/model.md#a-sufficient-all-time-ppt-condition).
 
 ### M09 — PPT, negativity and bound entanglement
@@ -132,7 +132,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 
 ### M16 — Encoding a target covariance
 
-- **Central question:** Why does $C_G=G-i\Omega$ turn a physical state into a valid dephasing generator?
+- **Central question:** Why does $`C_G=G-i\Omega`$ turn a physical state into a valid dephasing generator?
 - **Understanding target:** Complex conjugation transfers covariance physicality to coefficient positivity. There are two carrier oscillators per target mode, and the target canonical form is block diagonal by party.
 - **Dependencies and story role:** M03, M05 and M13–M15. It introduces the constructive link between state geometry and dynamics.
 - **Conceptual connection:** A target's noncommuting phase-space coordinates label distinct commuting carrier positions; confusing these two roles would miscount both modes and commutators.
@@ -141,7 +141,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M17 — The local reservoir dilation
 
 - **Central question:** Where do the correlations supplied to the carriers physically reside?
-- **Understanding target:** A reservoir with covariance $G$ interacts locally with each party's carriers. The exact dilation reproduces the kernel and exposes the reservoir contribution to momentum. Fresh reservoir degrees of freedom are needed when composing time steps.
+- **Understanding target:** A reservoir with covariance $`G`$ interacts locally with each party's carriers. The exact dilation reproduces the kernel and exposes the reservoir contribution to momentum. Fresh reservoir degrees of freedom are needed when composing time steps.
 - **Dependencies and story role:** M05, M11 and M16. It makes the channel's existence and resource accounting explicit.
 - **Conceptual connection:** A local interaction can transfer existing bath entanglement into initially uncorrelated carriers. The reduced zero-Hamiltonian statement does not remove the microscopic interaction.
 - **Source pointers:** [W, §V A][weedbrook]; [embedding — Exact channel and a finite-time dilation](../science/reservoir-embedding.md#exact-channel-and-a-finite-time-dilation) and [Resources, interpretation, and limitations](../science/reservoir-embedding.md#resources-interpretation-and-limitations).
@@ -149,7 +149,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M18 — Extracting actual canonical modes
 
 - **Central question:** Why does the extracted observable vector describe a local subsystem?
-- **Understanding target:** The vector $X=(P+t\Omega Q)/\sqrt{2t}$ has the target commutators. An explicitly commuting canonical complement completes it to a local symplectic transformation, followed by local discarding.
+- **Understanding target:** The vector $`X=(P+t\Omega Q)/\sqrt{2t}`$ has the target commutators. An explicitly commuting canonical complement completes it to a local symplectic transformation, followed by local discarding.
 - **Dependencies and story role:** M04–M05 and M16–M17. It establishes that the target-like covariance belongs to genuine modes.
 - **Conceptual connection:** Local extraction cannot create cross-party entanglement; an entangled extracted state therefore certifies entanglement already present in the carrier state.
 - **Source pointers:** [W, §§II A.2, II B.3–4, II B.6 and II C.2][weedbrook]; [embedding — Local canonical extraction and completion](../science/reservoir-embedding.md#local-canonical-extraction-and-completion).
@@ -157,7 +157,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M19 — A finite-time witness survives added noise
 
 - **Central question:** Why does approximate target recovery suffice for an exact entanglement conclusion?
-- **Understanding target:** Vacuum input adds $I/(2t)$ to the extracted target covariance. A strict positive witness gap survives whenever its added score is smaller than that gap, yielding a finite sufficient time.
+- **Understanding target:** Vacuum input adds $`I/(2t)`$ to the extracted target covariance. A strict positive witness gap survives whenever its added score is smaller than that gap, yielding a finite sufficient time.
 - **Dependencies and story role:** M10 and M16–M18. It turns asymptotically small noise into a finite-time theorem.
 - **Conceptual connection:** The argument needs a strict separability-witness violation, not exact recovery of the target or an assertion that entanglement exists only at infinite time.
 - **Source pointers:** [W, §§II D.1 and V A][weedbrook]; [embedding — Separability: both directions](../science/reservoir-embedding.md#separability-both-directions).
@@ -181,7 +181,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M22 — A concrete physical and PPT target
 
 - **Central question:** What exact data instantiate the general construction?
-- **Understanding target:** The inherited Werner–Wolf four-mode covariance has explicitly nonnegative physicality and partial-transpose uncertainty spectra. Adding $I/30$ supplies strict margins; encoding it requires eight carrier modes, four per party.
+- **Understanding target:** The inherited Werner–Wolf four-mode covariance has explicitly nonnegative physicality and partial-transpose uncertainty spectra. Adding $`I/30`$ supplies strict margins; encoding it requires eight carrier modes, four per party.
 - **Dependencies and story role:** M03, M08 and M16–M21. It converts the theorem's abstract target into fully specified data.
 - **Conceptual connection:** The integer target is an established Gaussian bound-entangled example. The new use is its realization within the restricted dephasing dynamics.
 - **Source pointers:** [W, §§II C and II D.1][weedbrook]; [embedding — An explicit integer example](../science/reservoir-embedding.md#an-explicit-integer-example); [bridge — A complete eight-carrier example](WEEDBROOK_BRIDGE.md#a-complete-eight-carrier-example).
@@ -189,7 +189,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M23 — Four variances certify the example
 
 - **Central question:** How does the exact benchmark produce an observable separability violation?
-- **Understanding target:** Four doubled variances have separable lower bound 28 and target score 26. Added target noise and finite-time extraction give $26+30\delta+15/t$, equal to $55/2$ at $\delta=1/30$, $t=30$.
+- **Understanding target:** Four doubled variances have separable lower bound 28 and target score 26. Added target noise and finite-time extraction give $`26+30\delta+15/t`$, equal to $`55/2`$ at $`\delta=1/30`$, $`t=30`$.
 - **Dependencies and story role:** M10, M18–M19 and M22. It completes the input–channel–measurement–conclusion chain for one example.
 - **Conceptual connection:** The variance score is evaluated after local decoding or through its pullback to carrier observables. Incompatible quadratures use separate preparations; no outcome postselection generates the certified state.
 - **Source pointers:** [W, §§II D.1 and II E.1][weedbrook]; [embedding — An explicit integer example](../science/reservoir-embedding.md#an-explicit-integer-example); [covariance witnesses — Sparse variance witnesses](../science/covariance-witnesses.md#sparse-variance-witnesses).
@@ -197,7 +197,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M24 — A smaller carrier certificate
 
 - **Central question:** How does the four-carrier construction differ from the eight-carrier encoding example?
-- **Understanding target:** The smaller construction directly specifies rational coefficient and witness matrices. Exact positive minors and radical bounds separately establish physicality, all-time PPT and a strict oscillator witness gap at $t=28/5$.
+- **Understanding target:** The smaller construction directly specifies rational coefficient and witness matrices. Exact positive minors and radical bounds separately establish physicality, all-time PPT and a strict oscillator witness gap at $`t=28/5`$.
 - **Dependencies and story role:** M10, M14–M15 and M23. It supplies the particular data used for the smaller finite-qubit realization.
 - **Conceptual connection:** A transparent general mechanism and a compact explicit example serve different purposes. Neither carrier count is an optimality theorem.
 - **Source pointers:** [W, §§II C and II D.1][weedbrook]; [four-mode certificate — The coefficient matrix](../science/four-mode-certificate.md#the-coefficient-matrix), [Exact physicality and all-time PPT](../science/four-mode-certificate.md#exact-physicality-and-all-time-ppt) and [Entanglement of the oscillator output](../science/four-mode-certificate.md#entanglement-of-the-oscillator-output).
@@ -205,7 +205,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 ### M25 — Finite ensembles are not exact oscillators
 
 - **Central question:** What changes when a carrier mode is replaced by finitely many qubits?
-- **Understanding target:** Normalized collective $Z$ and $Y$ components reproduce vacuum-like initial second moments, but their commutator contains the operator $\overline X_j$. The same coefficient positivity conditions still apply to these bounded commuting dephasing observables.
+- **Understanding target:** Normalized collective $`Z`$ and $`Y`$ components reproduce vacuum-like initial second moments, but their commutator contains the operator $`\overline X_j`$. The same coefficient positivity conditions still apply to these bounded commuting dephasing observables.
 - **Dependencies and story role:** M01, M13, M15 and M24. It opens the finite-dimensional construction without assuming an oscillator approximation as a proof.
 - **Conceptual connection:** The boson–ensemble correspondence motivates the choice; the actual finite-spin commutators determine what must be certified.
 - **Source pointers:** [W, §§II A and II B.1][weedbrook] for the oscillator reference; [finite-spin transfer — Statement of the transfer theorem](../science/finite-spin-transfer.md#1-statement-of-the-transfer-theorem) and [Physicality and PPT are uniform in the group size](../science/finite-spin-transfer.md#2-physicality-and-ppt-are-uniform-in-the-group-size).

@@ -18,11 +18,11 @@ This repository establishes finite-time creation of positive-partial-transpose (
 
 ### Covariance and witness provenance
 
-[Werner and Wolf (2001)](https://doi.org/10.1103/PhysRevLett.86.3658) establish the covariance characterization of Gaussian separability and exhibit Gaussian PPT-entangled states with two modes per party. In the doubled-covariance convention used here, a Gaussian covariance is separable exactly when it dominates a direct sum of physical local covariances. The integer covariance $G_0$ used in [the eight-carrier example](../science/reservoir-embedding.md#an-explicit-integer-example) is their Eq. (9), with the coordinate ordering stated explicitly in our derivation. It is an inherited bound-entangled state, subsequently encoded into a dephasing generator.
+[Werner and Wolf (2001)](https://doi.org/10.1103/PhysRevLett.86.3658) establish the covariance characterization of Gaussian separability and exhibit Gaussian PPT-entangled states with two modes per party. In the doubled-covariance convention used here, a Gaussian covariance is separable exactly when it dominates a direct sum of physical local covariances. The integer covariance $`G_0`$ used in [the eight-carrier example](../science/reservoir-embedding.md#an-explicit-integer-example) is their Eq. (9), with the coordinate ordering stated explicitly in our derivation. It is an inherited bound-entangled state, subsequently encoded into a dephasing generator.
 
 [Hyllus and Eisert (2006)](https://doi.org/10.1088/1367-2630/8/4/051) develop linear second-moment entanglement witnesses, their optimization by semidefinite programming, and their applicability to non-Gaussian states. Our [covariance-witness proof](../science/covariance-witnesses.md) states the required uncertainty bound directly. The finite-spin application retains the actual state-dependent spin commutators, so its separability test does not assume a Gaussian state or replace finite spins by exact canonical variables.
 
-[Wang, Seif and Clerk (2024)](https://doi.org/10.1103/PhysRevA.110.L050602), in their discussion of many-body extensions, already use the Holstein–Primakoff correspondence to replace each bosonic mode by an ensemble of $2S$ spins, with a quadrature mapped to a rescaled collective spin component $S_x/\sqrt S$. That boson-to-ensemble correspondence is established. The additional result in [our finite-spin construction](../science/finite-spin-transfer.md) is a rigorous finite-size PPT-entanglement certificate using exact moments and the actual spin commutators.
+[Wang, Seif and Clerk (2024)](https://doi.org/10.1103/PhysRevA.110.L050602), in their discussion of many-body extensions, already use the Holstein–Primakoff correspondence to replace each bosonic mode by an ensemble of $`2S`$ spins, with a quadrature mapped to a rescaled collective spin component $`S_x/\sqrt S`$. That boson-to-ensemble correspondence is established. The additional result in [our finite-spin construction](../science/finite-spin-transfer.md) is a rigorous finite-size PPT-entanglement certificate using exact moments and the actual spin commutators.
 
 ### Hamiltonian-free dissipative transfer
 
@@ -44,17 +44,17 @@ This repository establishes finite-time creation of positive-partial-transpose (
 
 ## Precise contribution and resource accounting
 
-The [embedding theorem](../science/reservoir-embedding.md) associates a physical $r$-mode Gaussian covariance $G$ with a dephasing coefficient matrix
+The [embedding theorem](../science/reservoir-embedding.md) associates a physical $`r`$-mode Gaussian covariance $`G`$ with a dephasing coefficient matrix
 
-$$
+```math
 C_G=G-i\Omega
-$$
+```
 
-on $2r$ carrier oscillators, where the canonical antisymmetric matrix $\Omega$ is block diagonal by party. A local canonical extraction from the evolved product vacuum has covariance $G+I/(2t)$. Gaussian separability is equivalent to separability preservation by every channel in this semigroup; Gaussian PPT is equivalent to PPT preservation at every time. An entangled target is therefore witnessed after a sufficiently large finite time, and a PPT-entangled target gives a PPT-entangling dephaser. The theorem also states the fixed-time correspondences when finite independent input squeezing is allowed. The result is this correspondence inside the restricted dephasing class, together with explicit finite-time and finite-spin certificates.
+on $`2r`$ carrier oscillators, where the canonical antisymmetric matrix $`\Omega`$ is block diagonal by party. A local canonical extraction from the evolved product vacuum has covariance $`G+I/(2t)`$. Gaussian separability is equivalent to separability preservation by every channel in this semigroup; Gaussian PPT is equivalent to PPT preservation at every time. An entangled target is therefore witnessed after a sufficiently large finite time, and a PPT-entangled target gives a PPT-entangling dephaser. The theorem also states the fixed-time correspondences when finite independent input squeezing is allowed. The result is this correspondence inside the restricted dephasing class, together with explicit finite-time and finite-spin certificates.
 
-The bath correlations are a supplied resource. In the local dilation, the reservoir itself has covariance $G$; an entangled target therefore uses an entangled reservoir. A realization based instead on independent vacuum reservoirs would require collective coupling operators. The absence of a system Hamiltonian in the reduced generator does not remove the interaction Hamiltonian needed in a microscopic dilation. The per-time dilation uses fresh reservoir degrees of freedom when channels are composed, rather than asserting a semigroup from repeatedly using one finite bath.
+The bath correlations are a supplied resource. In the local dilation, the reservoir itself has covariance $`G`$; an entangled target therefore uses an entangled reservoir. A realization based instead on independent vacuum reservoirs would require collective coupling operators. The absence of a system Hamiltonian in the reduced generator does not remove the interaction Hamiltonian needed in a microscopic dilation. The per-time dilation uses fresh reservoir degrees of freedom when channels are composed, rather than asserting a semigroup from repeatedly using one finite bath.
 
-At finite time, the extracted state contains the explicit additive noise $I/(2t)$. Physical target-state recovery includes local squeezing, rotations and mode mixing in the decoder. Entanglement certification can instead use the corresponding pulled-back variance witness without implementing that decoder. The examples make no minimum-system-size or experimental-resource optimum claim. Their PPT statements apply to the designated bipartition, not automatically to every cut.
+At finite time, the extracted state contains the explicit additive noise $`I/(2t)`$. Physical target-state recovery includes local squeezing, rotations and mode mixing in the decoder. Entanglement certification can instead use the corresponding pulled-back variance witness without implementing that decoder. The examples make no minimum-system-size or experimental-resource optimum claim. Their PPT statements apply to the designated bipartition, not automatically to every cut.
 
 ## Bibliographic entries
 
