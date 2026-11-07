@@ -48,11 +48,10 @@ There is no system Hamiltonian. Time is measured in units of the overall dephasi
 
 1. From product carrier vacuum, a local Gaussian unitary followed by local discarding produces an $`r`$-mode state with doubled covariance
 
-   ```math
-   G+\frac{I}{2t},\qquad t>0.
-   \tag{2}
-   
-   ```
+```math
+G+\frac{I}{2t},\qquad t>0.
+\tag{2}
+```
 
 2. The target Gaussian state is separable if and only if every $`\Phi_t^G`$ preserves separability. If the target is entangled, product carrier vacuum produces entanglement for every sufficiently large finite $`t`$.
 3. The target is PPT if and only if the semigroup is PPT preserving at all times. Consequently, every Gaussian PPT-entangled target yields PPT-entangled carrier output from product vacuum at a finite time.
