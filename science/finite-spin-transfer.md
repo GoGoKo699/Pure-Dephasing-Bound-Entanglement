@@ -251,7 +251,7 @@ $$
 Then
 
 $$
-0<a_j\le1,\qquad 0\le1-a_j\le\eta_j(m).
+0\lt a_j\le1,\qquad 0\le1-a_j\le\eta_j(m).
 \tag{11}
 $$
 
@@ -363,7 +363,7 @@ $$
 \mathcal E_W(m)={}&
 2\sum_{j,k}|W_{Q_jP_k}|E^{QP}_{jk}(m)\\
 &+\sum_j W_{P_jP_j}E^{PP}_{jj}(m)
-+2\sum_{j<k}|W_{P_jP_k}|E^{PP}_{jk}(m).
++2\sum_{j\lt k}|W_{P_jP_k}|E^{PP}_{jk}(m).
 \end{aligned}
 \tag{15}
 $$
