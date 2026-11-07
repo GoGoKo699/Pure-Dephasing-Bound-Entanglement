@@ -1,6 +1,6 @@
 # Scientific overview
 
-[Repository](../README.md) · [Related work](../references/RELATED_WORK.md) · [Verification](../verification/README.md)
+[Repository](../README.md) · [Learning bridge](../learning/WEEDBROOK_BRIDGE.md) · [Milestones](../learning/MILESTONES.md) · [Related work](../references/RELATED_WORK.md) · [Verification](../verification/README.md)
 
 Dephasing fixes populations in a preferred basis. Real correlated phase noise acts as a mixture of local phase rotations, so it cannot create entanglement from a separable input. Complex quantum correlations in a Markovian dephasing reservoir allow a different behavior: the output can become entangled even while partial transposition remains positive throughout the evolution.
 
