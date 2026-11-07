@@ -1,0 +1,167 @@
+{
+  "status": "all exact identities and inequalities passed",
+  "target_order": "q1,p1,q2,p2,q3,p3,q4,p4",
+  "carrier_order": "Q1,...,Q8,P1,...,P8",
+  "target_bipartition": "modes 1,2 | modes 3,4",
+  "carrier_bipartition": "modes 1,...,4 | modes 5,...,8",
+  "WW_uncertainty_characteristic_polynomial": "x**2*(x - 3)**2*(x**2 - 6*x + 6)**2",
+  "WW_uncertainty_eigenvalues_each_twice": [
+    "0",
+    "3",
+    "3-sqrt(3)",
+    "3+sqrt(3)"
+  ],
+  "target_WW_covariance": [
+    [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ]
+  ],
+  "witness_factor_F": [
+    [
+      2,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "witness_target_score": "26",
+  "witness_trace": "30",
+  "separable_lower_bound": "28",
+  "decoded_witness_score": "30*delta + 26 + 15/t",
+  "sufficient_entanglement_region": "delta >= 0 and delta + 1/(2*t) < 1/15",
+  "benchmark_delta": "1/30",
+  "benchmark_time": "30",
+  "benchmark_score": "55/2",
+  "benchmark_violation": "1/2",
+  "benchmark_C_leading_principal_minors": [
+    "61/30",
+    "991/900",
+    "60451/27000",
+    "982081/810000",
+    "32258041/24300000",
+    "1232300161/729000000",
+    "16531708921/21870000000",
+    "257932952641/656100000000"
+  ],
+  "benchmark_CT_leading_principal_minors": [
+    "61/30",
+    "991/900",
+    "60451/27000",
+    "982081/810000",
+    "32258041/24300000",
+    "1232300161/729000000",
+    "16531708921/21870000000",
+    "257932952641/656100000000"
+  ]
+}
